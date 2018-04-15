@@ -1,0 +1,80 @@
+﻿html {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+  html body {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden; }
+    html body .stranger-things-container.chapter {
+      width: 100%;
+      height: 100%; }
+      html body .stranger-things-container.chapter a {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        display: block;
+        text-decoration: none;
+        z-index: 5;
+        padding: 8px 60px;
+        color: #F9F7F5; }
+        html body .stranger-things-container.chapter a.hide {
+          display: none; }
+      html body .stranger-things-container.chapter a.chapter-play {
+        color: #ff1515;
+        border: 1px solid #ff1515;
+        border-radius: 8px;
+        box-shadow: -1px 8px 9px -5px; }
+        html body .stranger-things-container.chapter a.chapter-play:hover {
+          box-shadow: -1px 9px 9px -4px; }
+      html body .stranger-things-container.chapter a.chapter-reload {
+        font-size: 32px; }
+        html body .stranger-things-container.chapter a.chapter-reload:hover {
+          color: #ff1515; }
+      html body .stranger-things-container.chapter > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent; }
+        html body .stranger-things-container.chapter > div.chapter-title {
+          background: url("../img/stranger-things-chapter-title.png") no-repeat;
+          z-index: 4;
+          opacity: 1.0;
+          transition: transform 50s ease; }
+        html body .stranger-things-container.chapter > div.chapter-backdrop1 {
+          background: #ff1515;
+          z-index: 3;
+          opacity: 1.0;
+          transition: opacity 300ms 2s; }
+        html body .stranger-things-container.chapter > div.chapter-backdrop2 {
+          background: #F9F7F5;
+          z-index: 2;
+          opacity: 1.0;
+          transition: opacity 300ms 4s; }
+        html body .stranger-things-container.chapter > div.chapter-background {
+          background: url("../img/stranger-things-chapter-background.jpg") no-repeat center;
+          background-size: cover;
+          z-index: 1; }
+      html body .stranger-things-container.chapter.state1 > div.chapter-title {
+        transform: scale(50, 50) translate(0px, -300px); }
+      html body .stranger-things-container.chapter.state1 > div.chapter-backdrop1 {
+        opacity: 0.0; }
+      html body .stranger-things-container.chapter.state1 > div.chapter-backdrop2 {
+        opacity: 0.0; }
+      html body .stranger-things-container.chapter.state2 > div.chapter-title {
+        opacity: 0.0;
+        transform: scale(50, 50) translate(0px, -300px);
+        transition: all 2s; }
+      html body .stranger-things-container.chapter.state3 > div.chapter-title {
+        display: none; }
+      html body .stranger-things-container.chapter.state3 > div.chapter-backdrop1 {
+        display: none; }
+      html body .stranger-things-container.chapter.state3 > div.chapter-backdrop2 {
+        display: none; }
+
